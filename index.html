@@ -6,14 +6,14 @@
     <title>Your Landing Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-zinc-900">
+<body class="bg-zinc-900 flex flex-col">
     <nav class="py-4 text-center text-white hover:text-orange-400 transition duration-300 ease-in-out">
         <div class="max-w-2xl mx-auto">
             <a href="" class="text-2xl font-semibold">NBA Ticket Advisor</a>
         </div>
     </nav>
 
-    <div class="min-h-screen flex justify-center">
+    <div id='divFold' class="flex justify-center">
         <div class="max-w-2xl py-16">
             <h1 class="text-5xl font-semibold text-center mb-5 text-zinc-300">Buy NBA tickets at the right time from right price</h1>
             <p class="text-2xl text-zinc-300 text-center mb-8">With AI powered price forecasting , get notified when it's the best time to buy NBA tickets.</p>
@@ -25,7 +25,26 @@
                     <button id="subscribeBtn" type="submit" class="w-1/2 bg-orange-600 text-white font-semibold py-2 px-4 rounded hover:bg-orange-900 transition duration-300 ease-in-out">Join Waiting List - No Spam!</button>
                 </form>
             </div>
-            
+        </div>
+    </div>
+
+    <div class="flex flex-row align-items justify-center bg-amber-100 p-8">
+        <div class="w-3/12 bg-white rounded-lg p-5 m-4 text text-center flex flex-col align-items justify-center">
+            <h3 class="text-xl font-semibold text-center mb-2">Best prices</h3>
+            <p class="text-l text-center mb-4">We monitor ticket prices 24/7 and notify you when it’s time to book to get the best deal.</p>
+        </div>
+
+        <div class="w-3/12 bg-white rounded-lg p-5 m-4 flex flex-col align-items justify-center">
+            <h3 class="text-xl font-semibold text-center mb-2">Best selection</h3>
+            <p class="text-l text-center mb-4">We many different ticketing platforms, both first market and second market to pick best seats for the right price</p>
+        </div>
+
+        <div class="w-3/12 bg-white rounded-lg p-5 m-4 flex flex-col align-items justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="blue" class="w-12 h-12 mx-auto">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z" />
+                </svg>
+            <h3 class="text-xl font-semibold text-center mb-2">No guesswork</h3>
+            <p class="text-l text-center mb-4">Backed by 63 trillion price points, our algorithms are able to predict whether you should book now or wait for a better price.</p>
         </div>
     </div>
 
