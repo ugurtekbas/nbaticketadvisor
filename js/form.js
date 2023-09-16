@@ -3,7 +3,7 @@ function heroSaveEmail() {
 }
 
 function footerSaveEmail() {
-    saveEmail('subscription-form', 'email', 'subscribeBtn', 'error-message', 'success-message', 'save-error-message', 'success-section');
+    saveEmail('bottom-subscription-form', 'bottom-email', 'bottom-subscribeBtn', 'bottom-error-message', 'bottom-success-message', 'bottom-save-error-message', 'bottom-success-section');
 }
 
 function saveEmail(subForm, emailInp, btn, errorMsg, successMsg, saveErrorMsg, successDiv) {
