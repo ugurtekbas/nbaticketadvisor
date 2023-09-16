@@ -6,6 +6,10 @@ function footerSaveEmail() {
     saveEmail('bottom-subscription-form', 'bottom-email', 'bottom-subscribeBtn', 'bottom-error-message', 'bottom-success-message', 'bottom-save-error-message', 'bottom-success-section');
 }
 
+function aboutSaveEmail() {
+    saveEmail('about-subscription-form', 'about-email', 'about-subscribeBtn', 'about-error-message', 'about-success-message', 'about-save-error-message', 'about-success-section');
+}
+
 function saveEmail(subForm, emailInp, btn, errorMsg, successMsg, saveErrorMsg, successDiv) {
     const emailInput = document.getElementById(emailInp);
     const errorMessage = document.getElementById(errorMsg);
