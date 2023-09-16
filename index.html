@@ -25,12 +25,11 @@
                 <div class="text-center">
                     <form id="subscription-form" class="mb-10 mt-12">
                         <!-- <label for="email" class="block text-gray-700">Email Address:</label> -- -->
-                        <p id="save-error-message" class="text-rose-500 mb-2 hidden">We couldn't save your email, please try again later</p>
+                        <p id="save-error-message" class="text-rose-500 mb-2 hidden animate-fadeOut">We couldn't save your email, please try again later</p>
                         <input type="email" id="email" name="email" placeholder="BuyTickets@RightPrice.com" class="w-1/2 border rounded py-2 px-3 mb-2 focus:outline-none focus:border-blue-500">
                         <p id="error-message" class="text-rose-500 mb-2 hidden">Please enter a valid email address</p>
                         <button id="subscribeBtn" type="button" onclick="heroSaveEmail()" class="w-1/2 bg-orange-600 text-white font-semibold py-2 px-4 rounded hover:bg-orange-900 transition duration-300 ease-in-out">Join Waiting List - No Spam!</button>
                     </form>
-                    <p id="success-message" class="text-green-600 mb-2 hidden">&#128077; Subscription successful</p>
                 </div>
                 <div id="success-section" class="text-center hidden">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="green" class="w-24 h-24 mb-2 mx-auto"">

@@ -15,7 +15,6 @@ function saveEmail(subForm, emailInp, btn, errorMsg, successMsg, saveErrorMsg, s
     const form = document.getElementById(subForm);
     const successSection = document.getElementById(successDiv);
 
-    // Regular expression for email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     const email = emailInput.value;
@@ -26,11 +25,9 @@ function saveEmail(subForm, emailInp, btn, errorMsg, successMsg, saveErrorMsg, s
             errorMessage.style.display = 'none';
         }, 6000);
     } else {
-        // Simulate a POST request to a certain URL
-        // Replace 'your-api-url' with your actual API endpoint
-        fetch('https://your-api-url', {
+        fetch('https://emailoctopus.com/api/1.6/lists/cbc61a2c-5096-11ee-bb2e-45b6af230df4/contacts', {
             method: 'POST',
-            body: JSON.stringify({ email: email }),
+            body: { email_address: email, api_key:'18d8dd1d-5cec-4c2a-8c82-f28b8a1a13fc' },
             headers: {
                 'Content-Type': 'application/json',
             },
