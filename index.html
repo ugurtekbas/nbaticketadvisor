@@ -23,11 +23,20 @@
                 <p class="text-2xl text-zinc-300 text-center mt-10 mb-8">With AI powered price forecasting , get notified when it's the best time to buy NBA tickets.</p>
                 
                 <div class="text-center">
-                    <form action="#" method="POST" class="mb-10 mt-12">
+                    <form id="subscription-form" class="mb-10 mt-12">
                         <!-- <label for="email" class="block text-gray-700">Email Address:</label> -- -->
+                        <p id="save-error-message" class="text-rose-500 mb-2 hidden">We couldn't save your email, please try again later</p>
                         <input type="email" id="email" name="email" placeholder="BuyTickets@RightPrice.com" class="w-1/2 border rounded py-2 px-3 mb-2 focus:outline-none focus:border-blue-500">
-                        <button id="subscribeBtn" type="submit" class="w-1/2 bg-orange-600 text-white font-semibold py-2 px-4 rounded hover:bg-orange-900 transition duration-300 ease-in-out">Join Waiting List - No Spam!</button>
+                        <p id="error-message" class="text-rose-500 mb-2 hidden">Please enter a valid email address</p>
+                        <button id="subscribeBtn" type="button" onclick="heroSaveEmail()" class="w-1/2 bg-orange-600 text-white font-semibold py-2 px-4 rounded hover:bg-orange-900 transition duration-300 ease-in-out">Join Waiting List - No Spam!</button>
                     </form>
+                    <p id="success-message" class="text-green-600 mb-2 hidden">&#128077; Subscription successful</p>
+                </div>
+                <div id="success-section" class="text-center hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="green" class="w-24 h-24 mb-2 mx-auto"">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <p class="text-green-600 mb-2">You're successfully subscribed! Don't forget to check your mailbox.</p>
                 </div>
             </div>
         </div>
@@ -91,5 +100,6 @@
     <script>
         // JavaScript functionality can be added here.
     </script>
+    <script src="js/form.js"></script>
 </body>
 </html>
