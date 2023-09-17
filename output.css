@@ -2712,6 +2712,18 @@ video {
   .sm\:underline {
     text-decoration-line: underline;
   }
+
+  @media not all and (min-width: 1280px) {
+    .sm\:max-xl\:self-center {
+      align-self: center;
+    }
+  }
+
+  @media not all and (min-width: 1024px) {
+    .sm\:max-lg\:self-center {
+      align-self: center;
+    }
+  }
 }
 
 @media (min-width: 768px) {
