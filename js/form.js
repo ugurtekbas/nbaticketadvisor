@@ -1,13 +1,20 @@
 function heroSaveEmail() {
     saveEmail('subscription-form', 'email', 'subscribeBtn', 'error-message', 'save-error-message', 'success-section');
+    gtag('event','Hero subscription button click', { 'event_category': 'Button click', 'event_label': 'Hero signup', 'value': 1 });
 }
 
 function footerSaveEmail() {
     saveEmail('bottom-subscription-form', 'bottom-email', 'bottom-subscribeBtn', 'bottom-error-message', 'bottom-save-error-message', 'bottom-success-section');
+    gtag('event','Footer subscription button click', { 'event_category': 'Button click', 'event_label': 'Footer signup', 'value': 1 });
 }
 
 function aboutSaveEmail() {
     saveEmail('about-subscription-form', 'about-email', 'about-subscribeBtn', 'about-error-message',  'about-save-error-message', 'about-success-section');
+    gtag('event','About subscription button click', { 'event_category': 'Button click', 'event_label': 'About signup', 'value': 1 });
+}
+
+function onTwitterClick() {
+    gtag('event', 'Twitter account link click', { 'event_category': 'Link click', 'event_label': 'Twitter', 'value': 1 });
 }
 
 function saveEmail(subForm, emailInp, btn, errorMsg, saveErrorMsg, successDiv) {
