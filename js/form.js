@@ -1,19 +1,18 @@
 function heroSaveEmail() {
-    saveEmail('subscription-form', 'email', 'subscribeBtn', 'error-message', 'success-message', 'save-error-message', 'success-section');
+    saveEmail('subscription-form', 'email', 'subscribeBtn', 'error-message', 'save-error-message', 'success-section');
 }
 
 function footerSaveEmail() {
-    saveEmail('bottom-subscription-form', 'bottom-email', 'bottom-subscribeBtn', 'bottom-error-message', 'bottom-success-message', 'bottom-save-error-message', 'bottom-success-section');
+    saveEmail('bottom-subscription-form', 'bottom-email', 'bottom-subscribeBtn', 'bottom-error-message', 'bottom-save-error-message', 'bottom-success-section');
 }
 
 function aboutSaveEmail() {
-    saveEmail('about-subscription-form', 'about-email', 'about-subscribeBtn', 'about-error-message', 'about-success-message', 'about-save-error-message', 'about-success-section');
+    saveEmail('about-subscription-form', 'about-email', 'about-subscribeBtn', 'about-error-message',  'about-save-error-message', 'about-success-section');
 }
 
-function saveEmail(subForm, emailInp, btn, errorMsg, successMsg, saveErrorMsg, successDiv) {
+function saveEmail(subForm, emailInp, btn, errorMsg, saveErrorMsg, successDiv) {
     const emailInput = document.getElementById(emailInp);
     const errorMessage = document.getElementById(errorMsg);
-    const successMessage = document.getElementById(successMsg);
     const saveErrorMessage = document.getElementById(saveErrorMsg);
     const subscribeBtn = document.getElementById(btn);
     const form = document.getElementById(subForm);
@@ -22,25 +21,35 @@ function saveEmail(subForm, emailInp, btn, errorMsg, successMsg, saveErrorMsg, s
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     const email = emailInput.value;
-
+    const data = {
+        "records": [
+            {
+              "fields": {
+                "Email": email,
+              }
+            }
+        ]
+    }
     if (!email.match(emailRegex)) {
         errorMessage.style.display = 'block';
         setTimeout(function () {
             errorMessage.style.display = 'none';
         }, 6000);
     } else {
-        fetch('https://emailoctopus.com/api/1.6/lists/cbc61a2c-5096-11ee-bb2e-45b6af230df4/contacts', {
-            method: 'POST',
-            body: { email_address: email, api_key:'18d8dd1d-5cec-4c2a-8c82-f28b8a1a13fc' },
-            headers: {
-                'Content-Type': 'application/json',
-            },
+        fetch(
+            'https://api.airtable.com/v0/appTlqT0QXLdRnYW2/tblZeSvuzSNgK30t5',
+            {
+                method: 'POST',
+                body: JSON.stringify(data),
+                headers: {
+                    'Authorization': 'Bearer ' + 'patstdFbhCs56N6L7.d4388703f2604e46ffde8a9a988de583f83ae57a9bfc25b75b0bc2feb1ca8e00',
+                    'Content-Type': 'application/json',
+                },
         })
         .then((response) => {
             if (response.ok) {
                 // Subscription successful
                 errorMessage.style.display = 'none';
-                successMessage.style.display = 'block';
                 emailInput.style.display = 'none';
                 subscribeBtn.style.display = 'none';
                 subscribeBtn.style.display = 'none';
