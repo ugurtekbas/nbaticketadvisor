@@ -62,11 +62,10 @@
                 
                 <div class="w-full">
                     <form id="subscription-form" class="mb-10 mt-12 flex flex-col items-center justify-center">
-                        <!-- <label for="email" class="block text-gray-700">Email Address:</label> -- -->
                         <p id="save-error-message" class="text-rose-500 mb-2 hidden">We couldn't save your email, please try again later</p>
-                        <input type="email" id="email" name="email" placeholder="Your email" class="w-1/2 border rounded py-2 px-3 mb-2 focus:outline-none focus:border-orange-500">
+                        <input type="email" id="email" name="email" placeholder="Your email" class="w-3/4 md:w-1/2 border rounded py-2 px-3 mb-2 focus:outline-none focus:border-orange-500">
                         <p id="error-message" class="text-rose-500 mb-2 hidden">Please enter a valid email address</p>
-                        <button id="subscribeBtn" type="button" onclick="heroSaveEmail()" class="w-1/2 bg-orange-600 text-white font-semibold py-2 px-4 rounded hover:bg-orange-900 transition duration-300 ease-in-out">Join Waiting List - No Spam!</button>
+                        <button id="subscribeBtn" type="button" onclick="heroSaveEmail()" class="w-3/4 md:w-1/2 bg-orange-600 text-white font-semibold py-2 px-4 rounded hover:bg-orange-900 transition duration-300 ease-in-out">Join Waiting List - No Spam!</button>
                     </form>
                 </div>
                 <div id="success-section" class="text-center hidden">
@@ -109,13 +108,12 @@
                 <h3 class="text-4xl font-semibold text-center mb-5 text-zinc-300 px-8 md:px-0">Be the first one to know when we launch!</h3>
                 <p class="text-xl text-zinc-300 text-center mb-8 px-8 md:px-0">We're making last adjustments before popping champagne. Leave your email address and get early access. Plus, earn special rewards when we launch.</p>
                 
-                <div class="text-center">
-                    <form id="bottom-subscription-form" class="mb-4">
-                        <!-- <label for="email" class="block text-gray-700">Email Address:</label> -- -->
+                <div class="w-full">
+                    <form id="bottom-subscription-form" class="mb-10 mt-12 flex flex-col items-center justify-center">
                         <p id="bottom-save-error-message" class="text-rose-500 mb-2 hidden">We couldn't subscribe you, please try again later</p>
-                        <input type="email" id="bottom-email" name="email" placeholder="Your email" class="w-1/2 border rounded py-2 px-3 mb-2 focus:outline-none focus:border-blue-500">
+                        <input type="email" id="bottom-email" name="email" placeholder="Your email" class="w-3/4 md:w-1/2 border rounded py-2 px-3 mb-2 focus:outline-none focus:border-blue-500">
                         <p id="bottom-error-message" class="text-rose-500 mb-2 hidden">Please enter a valid email address</p>
-                        <button id="bottom-subscribeBtn" type="button" onclick="footerSaveEmail()" class="w-1/2 bg-orange-600 text-white font-semibold py-2 px-4 rounded hover:bg-orange-900 transition duration-300 ease-in-out">Get early access</button>
+                        <button id="bottom-subscribeBtn" type="button" onclick="footerSaveEmail()" class="w-3/4 md:w-1/2 bg-orange-600 text-white font-semibold py-2 px-4 rounded hover:bg-orange-900 transition duration-300 ease-in-out">Get early access</button>
                     </form>
                 </div>
                 <div id="bottom-success-section" class="text-center hidden">

@@ -20,7 +20,8 @@
         gtag('config', 'G-YFL3KVP5YX');
     </script>    
     
-    <link href="./output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link href="./output.css" rel="stylesheet"> -->
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png?v=2">
@@ -74,17 +75,16 @@
         </div>
 
         <div id='divFold' class="flex justify-center">
-            <div class="max-w-2xl pt-6 pb-8 mb-8">
+            <div class="max-w-2xl pt-10 md:pt-16 pb-10 md:pb-16">
                 <h3 class="text-4xl font-semibold text-center mb-5 text-zinc-300 px-8 md:px-0">Be the first one to know when we launch!</h3>
                 <p class="text-xl text-zinc-300 text-center mb-8 px-8 md:px-0">Leave your email address, get early access, earn special rewards when we launch.</p>
                 
-                <div class="text-center">
-                    <form id="about-subscription-form" class="mb-4">
-                        <!-- <label for="email" class="block text-gray-700">Email Address:</label> -- -->
+                <div class="w-full">
+                    <form id="about-subscription-form" class="mb-10 mt-12 flex flex-col items-center justify-center">
                         <p id="about-save-error-message" class="text-rose-500 mb-2 hidden">We couldn't subscribe you, please try again later</p>
-                        <input type="email" id="about-email" name="email" placeholder="Your email" class="w-1/2 border rounded py-2 px-3 mb-2 focus:outline-none focus:border-blue-500">
+                        <input type="email" id="about-email" name="email" placeholder="Your email" class="w-3/4 md:w-1/2 border rounded py-2 px-3 mb-2 focus:outline-none focus:border-blue-500">
                         <p id="about-error-message" class="text-rose-500 mb-2 hidden">Please enter a valid email address</p>
-                        <button id="about-subscribeBtn" type="button" onclick="aboutSaveEmail()" class="w-1/2 bg-orange-600 text-white font-semibold py-2 px-4 rounded hover:bg-orange-900 transition duration-300 ease-in-out">Get early access</button>
+                        <button id="about-subscribeBtn" type="button" onclick="aboutSaveEmail()" class="w-3/4 md:w-1/2 bg-orange-600 text-white font-semibold py-2 px-4 rounded hover:bg-orange-900 transition duration-300 ease-in-out">Get early access</button>
                     </form>
                 </div>
                 <div id="about-success-section" class="text-center hidden">
