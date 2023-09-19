@@ -46,6 +46,12 @@
     <meta name="twitter:description" content="Best time to buy NBA tickets. Monitoring tickets prices 24/7 and using prediction algorithms to forecast best time to buy NBA tickets for the best price.">
     <meta name="twitter:image" content="img/android-chrome-192x192.png">
     <!-- Previews -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
+    <style>
+        .number-font {
+          font-family: 'Nunito', sans-serif;
+        }
+      </style>
 </head>
 <body class="bg-zinc-900 flex flex-col min-h-screen">
     <nav class="py-4 text-center text-white hover:text-orange-400 transition duration-300 ease-in-out">
@@ -77,8 +83,8 @@
             </div>
         </div>
 
-        <div class="flex flex-col lg:flex-row justify-center bg-amber-100 px-8 py-20 md:py-28">
-            <div class="sm:w-8/12 md:w-7/12 lg:w-3/12 bg-white rounded-lg p-5 mx-10 my-6 text text-center flex flex-col align-items justify-center sm:max-lg:self-center">
+        <div class="flex flex-col lg:flex-row justify-center rounded-xl bg-amber-100 px-8 py-20 md:py-28 mx-8 my-8">
+            <div class="sm:w-8/12 md:w-7/12 lg:w-2/12 bg-white rounded-lg p-5 mx-10 my-6 text text-center flex flex-col align-items justify-center sm:max-lg:self-center">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#f97316" stroke-width="1.5" class="w-12 h-12 mb-2 mx-auto">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
@@ -86,7 +92,7 @@
                 <p class="text-xl text-center mb-4">We monitor ticket prices 24/7 and notify you when it’s time to buy to get the best deal.</p>
             </div>
 
-            <div class="sm:w-8/12 md:w-7/12 lg:w-3/12 bg-white rounded-lg p-5 mx-10 my-6 flex flex-col align-items justify-center sm:max-lg:self-center">
+            <div class="sm:w-8/12 md:w-7/12 lg:w-2/12 bg-white rounded-lg p-5 mx-10 my-6 flex flex-col align-items justify-center sm:max-lg:self-center">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#f97316" class="w-12 h-12 mb-2 mx-auto">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 15.75l-2.489-2.489m0 0a3.375 3.375 0 10-4.773-4.773 3.375 3.375 0 004.774 4.774zM21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
@@ -94,12 +100,47 @@
                 <p class="text-xl text-center mb-4">We check various ticketing platforms, including both primary and secondary markets, to select the best seats at the right price.</p>
             </div>
 
-            <div class="sm:w-8/12 md:w-7/12 lg:w-3/12 bg-white rounded-lg p-5 mx-10 my-6 flex flex-col align-items justify-center sm:max-lg:self-center">
+            <div class="sm:w-8/12 md:w-7/12 lg:w-2/12 bg-white rounded-lg p-5 mx-10 my-6 flex flex-col align-items justify-center sm:max-lg:self-center">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#f97316" class="w-12 h-12 mb-2 mx-auto">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M21 7.5l-2.25-1.313M21 7.5v2.25m0-2.25l-2.25 1.313M3 7.5l2.25-1.313M3 7.5l2.25 1.313M3 7.5v2.25m9 3l2.25-1.313M12 12.75l-2.25-1.313M12 12.75V15m0 6.75l2.25-1.313M12 21.75V19.5m0 2.25l-2.25-1.313m0-16.875L12 2.25l2.25 1.313M21 14.25v2.25l-2.25 1.313m-13.5 0L3 16.5v-2.25" />
                 </svg>
                 <h3 class="text-2xl font-semibold text-center mb-2">Data-Driven Precision</h3>
                 <p class="text-xl text-center mb-4">Backed by thousands of price points, our algorithms are able to predict the perfect time to buy your tickets.</p>
+            </div>
+        </div>
+
+        <div class="flex flex-col align-items justify-center rounded-xl bg-neutral-100 px-8 py-20 md:py-28 mx-8 my-8">
+            <div class="sm:w-8/12 md:w-7/12 lg:w-3/12 bg-white rounded-lg pt-7 pb-6 px-6 mx-10 my-6 text text-center flex flex-col align-items justify-center self-center">
+                <svg height="2em" viewBox="0 0 256 256" class="w-20 h-20 mb-2 mx-auto">
+                    <!-- Circle for the border -->
+                    <circle cx="128" cy="128" r="120" fill="transparent" stroke="#f87316" stroke-width="15" />
+                    <!-- Number 1 -->
+                    <text x="50%" y="50%" text-anchor="middle" dy=".3em" font-size="160" fill="#f87316" class="number-font">1</text>
+                </svg>
+                <h3 class="text-2xl font-semibold text-center mb-2 px-4 pt-4">Select the game</h3>  
+                <p class="text-xl text-center mb-4 px-4 pt-3">Browse all games of your favorite team and pick the one you want to see your team live.</p>
+            </div>
+
+            <div class="sm:w-8/12 md:w-7/12 lg:w-3/12 bg-white rounded-lg pt-7 pb-6 px-6 mx-10 my-6 text text-center flex flex-col align-items justify-center self-center">
+                <svg height="2em" viewBox="0 0 256 256" class="w-20 h-20 mb-2 mx-auto">
+                    <!-- Circle for the border -->
+                    <circle cx="128" cy="128" r="120" fill="transparent" stroke="#f87316" stroke-width="15" />
+                    <!-- Number 1 -->
+                    <text x="50%" y="50%" text-anchor="middle" dy=".3em" font-size="160" fill="#f87316" class="number-font">2</text>
+                </svg>
+                <h3 class="text-2xl font-semibold text-center mb-2 px-4 pt-4">Leave your email</h3>  
+                <p class="text-xl text-center mb-4 px-4 pt-3">Our only contact point. No spam, no ads.</p>
+            </div>
+
+            <div class="sm:w-8/12 md:w-7/12 lg:w-3/12 bg-white rounded-lg pt-7 pb-6 px-6 mx-10 my-6 text text-center flex flex-col align-items justify-center self-center">
+                <svg height="2em" viewBox="0 0 256 256" class="w-20 h-20 mb-2 mx-auto">
+                    <!-- Circle for the border -->
+                    <circle cx="128" cy="128" r="120" fill="transparent" stroke="#f87316" stroke-width="15" />
+                    <!-- Number 1 -->
+                    <text x="50%" y="50%" text-anchor="middle" dy=".3em" font-size="160" fill="#f87316" class="number-font">3</text>
+                </svg>
+                <h3 class="text-2xl font-semibold text-center mb-2 px-4 pt-4">Get notified</h3>  
+                <p class="text-xl text-center mb-4 px-4 pt-3">We'll notify you via email only when it's perfect time to purchase your tickets.</p>
             </div>
         </div>
 
