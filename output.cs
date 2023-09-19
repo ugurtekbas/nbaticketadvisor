@@ -858,8 +858,8 @@ video {
   height: 3rem;
 }
 
-.h-20 {
-  height: 5rem;
+.h-16 {
+  height: 4rem;
 }
 
 .h-24 {
@@ -874,8 +874,8 @@ video {
   width: 3rem;
 }
 
-.w-20 {
-  width: 5rem;
+.w-16 {
+  width: 4rem;
 }
 
 .w-24 {
@@ -2149,6 +2149,11 @@ video {
   line-height: 1;
 }
 
+.text-5xl\/\[52px\] {
+  font-size: 3rem;
+  line-height: 52px;
+}
+
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -2739,6 +2744,16 @@ video {
 
   .md\:pt-16 {
     padding-top: 4rem;
+  }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .md\:text-6xl\/\[70px\] {
+    font-size: 3.75rem;
+    line-height: 70px;
   }
 }
 
