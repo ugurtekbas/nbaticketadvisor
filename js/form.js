@@ -41,8 +41,11 @@ function saveEmail(subForm, emailInp, btn, errorMsg, saveErrorMsg, successDiv) {
         errorMessage.style.display = 'block';
         setTimeout(function () {
             errorMessage.style.display = 'none';
-        }, 6000);
+        }, 4000);
     } else {
+        subscribeBtn.classList.add("button--loading");
+        subscribeBtn.disabled = true;
+
         fetch(
             'https://api.airtable.com/v0/appTlqT0QXLdRnYW2/tblZeSvuzSNgK30t5',
             {
@@ -56,6 +59,8 @@ function saveEmail(subForm, emailInp, btn, errorMsg, saveErrorMsg, successDiv) {
         .then((response) => {
             if (response.ok) {
                 // Subscription successful
+                subscribeBtn.classList.remove("button--loading");
+                subscribeBtn.disabled = false;
                 errorMessage.style.display = 'none';
                 emailInput.style.display = 'none';
                 subscribeBtn.style.display = 'none';
@@ -66,18 +71,22 @@ function saveEmail(subForm, emailInp, btn, errorMsg, saveErrorMsg, successDiv) {
                 // Error saving email
                 errorMessage.style.display = 'none';
                 saveErrorMessage.style.display = 'block';
+                subscribeBtn.classList.remove("button--loading");
+                subscribeBtn.disabled = false;
                 setTimeout(function () {
                     saveErrorMessage.style.display = 'none';
-                }, 6000);
+                }, 4000);
             }
         })
         .catch((error) => {
             console.error(error);
             errorMessage.style.display = 'none';
             saveErrorMessage.style.display = 'block';
+            subscribeBtn.classList.remove("button--loading");
+            subscribeBtn.disabled = false;
             setTimeout(function () {
                 saveErrorMessage.style.display = 'none';
-            }, 6000);
+            }, 4000);
         });
     }
 }
