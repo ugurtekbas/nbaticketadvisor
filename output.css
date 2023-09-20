@@ -2724,6 +2724,11 @@ video {
     padding-right: 0px;
   }
 
+  .md\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   .md\:px-7 {
     padding-left: 1.75rem;
     padding-right: 1.75rem;
