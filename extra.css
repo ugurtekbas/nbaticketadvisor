@@ -1,6 +1,10 @@
 .number-font {
     font-family: 'Nunito', sans-serif;
-  }
+}
+
+.new-font {
+    font-family: 'Montserrat', sans-serif;
+}
 
 .button--loading .button__text {
     visibility: hidden;
