@@ -2732,14 +2732,6 @@ video {
     width: 58.333333%;
   }
 
-  .md\:flex-row {
-    flex-direction: row;
-  }
-
-  .md\:items-end {
-    align-items: flex-end;
-  }
-
   .md\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -2802,10 +2794,6 @@ video {
     flex-direction: row;
   }
 
-  .lg\:items-end {
-    align-items: flex-end;
-  }
-
   .lg\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -2821,12 +2809,24 @@ video {
 }
 
 @media (min-width: 1280px) {
+  .xl\:ml-6 {
+    margin-left: 1.5rem;
+  }
+
   .xl\:w-2\/12 {
     width: 16.666667%;
   }
 
   .xl\:w-5\/12 {
     width: 41.666667%;
+  }
+
+  .xl\:flex-row {
+    flex-direction: row;
+  }
+
+  .xl\:items-end {
+    align-items: flex-end;
   }
 
   .xl\:px-0 {
