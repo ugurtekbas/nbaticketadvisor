@@ -88,5 +88,7 @@ function saveEmail(subForm, emailInp, btn, errorMsg, saveErrorMsg, successDiv) {
                 saveErrorMessage.style.display = 'none';
             }, 4000);
         });
+        
+        rdt('track', 'SignUp');
     }
 }
